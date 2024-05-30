@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --pri : black  ;
+    --sec : white;
+    --ter : black;
+    --quad:rgb(53, 52, 52);
+    --pent:rgba(206, 204, 204, 0.808);
+    --hex :#25484543;
+
+}
+.heading{
+    text-align: center;
+}
+.cont {
+    text-align: center;
+}
+
+.showlist {
+    width: 500px;
+    height: 300px;
+    overflow-y: auto;
+    background-color:var(--hex);
+    border: 2px solid var(--hex);
+    border-radius: 20px;
+}
+.btn-style{
+    position: relative;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:var(--ter);
+    color: white;
+    border-radius: 5px;
+    margin: 0px 5px;
+
+}
+.Function-btn button{
+    margin: 5vh;
+}
+
+#title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4vh;
+    position: relative;
+    text-transform: capitalize;
+    color: var(--ter);
+}
+
+#title:hover {
+    
+    color: var(--quad);
+    cursor: pointer;
+
+}
+#title::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--pri);
+    transition: all .5s;
+}
+#title:hover::before{
+    width: 100%;
+}
+
+
+#my_list li {
+    display: grid;
+    grid-template-columns: auto 85px 90px;
+    border: 2px solid var(--quad);
+    border-radius: 20px ;
+    margin-top: 5px;
+    text-align: left;
+    padding: 5px 12px;
+    font-size: large;
+    text-transform: capitalize;
+    align-items: center;
+    text-wrap: wrap;
+
+}
+
+#my_list li button {
+    position: relative;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--ter);
+    color: white;
+    border-radius: 5px;
+    margin: 0px 5px;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+#my_list li:hover{
+ background-color: var(--pent);
+}
+
+#my_list li:hover button {
+    opacity: 1;
+    
+}
+
+
+
+/* Input tag css */
+#input_div{
+    margin: 4vh;
+    
+}
+#input_div input[type=text]{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    height: 5vh;
+    font-size: large;
+    border-bottom: 2px solid black;
+    
+}
+#input_div input[type=text]:focus {
+    /* border: none; */
+    outline: none;
+
+    
+}
+#input_div input[type=text]::placeholder{
+    font-size: large;
+}
+
+
+
+
+/* Features Styling Start here */
+#functions{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+#features-list{
+    text-wrap: wrap;
+    /* width: 40vw; */
+    border: 2px solid green;
+    background-color: var(--quad);
+    text-align: left;
+    
+}
+/* Responsive ness */
+@media screen and (max-width: 800px) {
+    .showlist{
+        max-width: 300px;
+    }
+   }

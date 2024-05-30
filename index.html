@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>List maker</title>
+</head>
+
+<body>
+    <div class="cont">
+        <div id="navbar" class="cont_item">
+            <ul id="nav_cont">
+                <li class="nav_item">Home</li>
+                <li class="nav_item">List</li>
+                <!-- <li class="nav_item">Services</li> -->
+                <li class="nav_item">Contact</li>
+            </ul>
+        </div>
+        <div id="list" class="cont_item">
+
+
+
+
+            <div id="input_div">
+                <!-- <label for="list_input"><h4>Start Entering your list item</h4></label> -->
+                <input type="text" id="list_input" class="list_input" placeholder="Enter here">
+                <button onclick="new_li()" class="btn-style" id="add">Add</button>
+
+            </div>
+            <div class="showlist">
+
+                <ul id="my_list">
+                    <h1 id="title">
+                        Edit Title
+                    </h1>
+                    <!-- <li>This is a test item 
+                        <button>Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div id="functions" class="cont_item">
+
+            <div class="Function-btn">
+                <button class="btn-style" id="download" onclick="screenshot()">download image</button>
+                <button class="btn-style" onclick="pdf_converter()">pdf</button>
+            </div>
+            <!-- Feature list has to added -->
+            <!-- <div id="features-list">
+                <h1 class="heading">Application Feature </h1>
+                <ol>
+                    <li>Download Image</li>
+
+                    <li>Download Pdf</li>
+                    <li>Edit list Item</li>
+                </ol>
+            </div> -->
+
+
+        </div>
+        <div id="footer" class="cont_item">Footer</div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
