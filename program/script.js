@@ -28,6 +28,7 @@ function new_li() {
         new_item.append(Edit_btn);
         new_item.append(Delete_btn);
         value.value = '';
+        value.focus();
            
         const showlistDiv = document.querySelector('.showlist');
         showlistDiv.scrollTop = showlistDiv.scrollHeight;

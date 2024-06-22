@@ -156,6 +156,10 @@
 }
 /* Responsive ness */
 @media screen and (max-width: 800px) {
+    #input_div input[type=text]{
+        width: 50vw;
+    }
+    
     .showlist{
         max-width: 300px;
     }
